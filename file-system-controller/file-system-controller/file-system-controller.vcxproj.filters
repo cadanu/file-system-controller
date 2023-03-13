@@ -18,5 +18,25 @@
     <ClCompile Include="file-system-controller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\FileController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\Singleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\StdIncludes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\FileController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\Singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\StdIncludes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

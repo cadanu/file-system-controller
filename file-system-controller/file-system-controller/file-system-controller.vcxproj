@@ -127,7 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\FileController.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\Singleton.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\StdIncludes.cpp" />
     <ClCompile Include="file-system-controller.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\FileController.h" />
+    <ClInclude Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\Singleton.h" />
+    <ClInclude Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\StdIncludes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
