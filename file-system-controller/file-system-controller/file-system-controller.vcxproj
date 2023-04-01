@@ -131,11 +131,19 @@
     <ClCompile Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\Singleton.cpp" />
     <ClCompile Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\StdIncludes.cpp" />
     <ClCompile Include="file-system-controller.cpp" />
+    <ClCompile Include="ObjectPool.cpp" />
+    <ClCompile Include="Resource.cpp" />
+    <ClCompile Include="Serializable.cpp" />
+    <ClCompile Include="StackAllocator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\FileController.h" />
     <ClInclude Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\Singleton.h" />
     <ClInclude Include="..\..\..\..\..\..\git\cpp\file-system-controller\file-system-controller\file-system-controller\StdIncludes.h" />
+    <ClInclude Include="ObjectPool.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Serializable.h" />
+    <ClInclude Include="StackAllocator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef STD_INCLUDES_H
 #define STD_INCLUDES_H
 
@@ -7,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <fstream>
 #include <cinttypes>
 #include <stdio.h>
 #include <thread>

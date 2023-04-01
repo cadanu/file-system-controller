@@ -1,6 +1,5 @@
-﻿  FileController.cpp
-  Singleton.cpp
-  StdIncludes.cpp
+﻿  Resource.cpp
   file-system-controller.cpp
+C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\file-system-controller\StackAllocator.h(12,46): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
   Generating Code...
   file-system-controller.vcxproj -> C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\x64\Debug\file-system-controller.exe

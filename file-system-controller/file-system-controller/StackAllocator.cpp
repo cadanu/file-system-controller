@@ -51,5 +51,4 @@ void StackAllocator::ClearMemory()
 	m_stackStart = nullptr;
 	m_stackPosition = nullptr;
 	m_stackEnd = nullptr;
-
 }
