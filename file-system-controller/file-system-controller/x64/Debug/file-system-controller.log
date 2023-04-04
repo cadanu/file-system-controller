@@ -1,5 +1,17 @@
-﻿  Resource.cpp
+﻿  Asset.cpp
+  AssetController.cpp
+C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\file-system-controller\StackAllocator.h(13,46): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  Level.cpp
+C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\file-system-controller\StackAllocator.h(13,46): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\file-system-controller\Level.cpp(46,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  ObjectPool.cpp
+  Resource.cpp
+C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\file-system-controller\StackAllocator.h(13,46): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  SoundEffect.cpp
+C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\file-system-controller\StackAllocator.h(13,46): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  Unit.cpp
+C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\file-system-controller\StackAllocator.h(13,46): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
   file-system-controller.cpp
-C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\file-system-controller\StackAllocator.h(12,46): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\file-system-controller\StackAllocator.h(13,46): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
   Generating Code...
   file-system-controller.vcxproj -> C:\Users\cadanu\projects\git\cpp\file-system-controller\file-system-controller\x64\Debug\file-system-controller.exe

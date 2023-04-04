@@ -1,39 +1,93 @@
 // file-system-controller.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "FileController.h"
-#include "StackAllocator.h"
-#include "ObjectPool.h"
-#include "Resource.h"
+//#include "FileController.h"
+//#include "StackAllocator.h"
+//#include "ObjectPool.h"
+//#include "Resource.h"
+//#include "Asset.h"
+//#include "AssetController.h"
+#include "Level.h"
 
 int main()
 {
+	// level test
+	Level* level = new Level();
+	level->AssignNonDefaultValues();
+	ofstream writeStream("./rsc/bin/level.bin", ios::out | ios::binary);
+	level->Serialize(writeStream);
+	writeStream.close();
+	cout << "Level ToSave:";
+	level->ToString();
+	delete level;
+	cout << endl;
+
+	Level* loadedLevel = new Level();
+	ifstream readStream("./rsc/bin/level.bin", ios::in | ios::binary);
+	loadedLevel->Deserialize(readStream);
+	readStream.close();
+	cout << "Loaded Level:";
+	loadedLevel->ToString();
+	delete loadedLevel;
+	// level test end
+
+
+	// asset controller test
+	//AssetController::Instance().Initialize(10000000);// allocate 10mb
+	////Asset* asset = AssetController::Instance().GetAsset("./rsc/emoji.jpg");
+	////cout << "Bytes used by image.bmp: " << AssetController::Stack->GetBytesUsed() << endl;
+	//Resource::Pool = new ObjectPool<Resource>();
+	//Resource* r1 = Resource::Pool->GetResource();// 1
+	//r1->AssignNonDefaultValues();// 2, 3
+
+	//ofstream writeStream("./rsc/resource.bin", ios::out | ios::binary);
+	//r1->Serialize(writeStream);
+	//writeStream.close();
+	//cout << "r1 values: ";
+	//r1->ToString();
+
+	//Resource* r2 = Resource::Pool->GetResource();
+	//ifstream readStream("resource.bin", ios::in | ios::binary);
+	//r2->Deserialize(readStream);
+	//readStream.close();
+	//cout << "r2 values: ";
+	//r2->ToString();
+
+	//delete Resource::Pool;
+	// asset controller test end
+
+
+	// memory-management test 2
 	//ObjectPool<Resource>* objP = new ObjectPool<Resource>();
 	//Resource* r1 = objP->GetResource();
-	Resource::Pool = new ObjectPool<Resource>();// 1
-	Resource* r1 = Resource::Pool->GetResource();// 2
+	//
+	//Resource::Pool = new ObjectPool<Resource>();// 1
+	//Resource* r1 = Resource::Pool->GetResource();// 2
 
-	r1->AssignNonDefaultValues();
+	//r1->AssignNonDefaultValues();
 
-	ofstream writeStream("./rsc/resource.bin", ios::out | ios::binary);
-	r1->Serialize(writeStream);
-	writeStream.close();
+	//ofstream writeStream("./rsc/resource.bin", ios::out | ios::binary);
+	//r1->Serialize(writeStream);
+	//writeStream.close();
 
-	cout << "r1 values: ";
-	r1->ToString();
+	//cout << "r1 values: ";
+	//r1->ToString();
 
 	//Resource* r2 = objP->GetResource();
-	Resource* r2 = Resource::Pool->GetResource();// 3
+	//
+	//Resource* r2 = Resource::Pool->GetResource();// 3
 
-	ifstream readStream("./rsc/resource.bin", ios::in | ios::binary);
-	r2->Deserialize(readStream);// 4
-	readStream.close();
+	//ifstream readStream("./rsc/resource.bin", ios::in | ios::binary);
+	//r2->Deserialize(readStream);// 4
+	//readStream.close();
 
-	cout << "r2 values: ";
-	r1->ToString();
+	//cout << "r2 values: ";
+	//r1->ToString();
 
 	//delete objP;// 
-	delete Resource::Pool;
+	//
+	//delete Resource::Pool;
+	// memory management test 2 end
 
 
 
